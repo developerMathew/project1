@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Services</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar navlist">
+        <h1>DRONE WORLD</h1>
+
+        <div class="nav-links show">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <button onclick="toggleMenu()">☰</button>
+        </div>
+
+    </div>
+    <div class="layer-1">
+        <form action="">
+            <h1>Contact Us</h1>
+            <div>
+                <input type="text" placeholder="enter your name"><br>
+                <input type="text" placeholder="enter your email"><br>
+                <input type="text" placeholder="enter your phone">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="parent-2">
+            <div class="website">
+                <i class="fa-solid fa-globe"></i>
+                <p>www.droneworld.com</p>
+            </div>
+            <div class="facebook">
+                <i class="fa-brands fa-facebook"></i>
+                <p>droneworld_professions</p>
+            </div>
+            <div class="linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+                <p>Droneworld@professions</p>
+            </div>
+            <div class="image">
+                <img src="drone1.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

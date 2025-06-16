@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>About page</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar navlist">
+        <h1>DRONE WORLD</h1>
+
+        <div class="nav-links show">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <button onclick="toggleMenu()">☰</button>
+        </div>
+
+    </div>
+    <!-- layer - 1 -->
+    <div class="layer-1">
+        <div class="b1">
+            <img src="b1.png" alt="">
+        </div>
+        <div class="typing-container">
+            <span id="typed-text"></span><span class="cursor">|</span>
+        </div>
+
+    </div>
+    <div class="line"></div>
+    <div class="layers">
+        <div class="layer-2">
+            <div class="layer2-head">
+                <img src="b1.png" alt="">
+                <h3>Business plan</h3>
+            </div>
+            <div class="layer2-content">
+                <p>Our company is most target to make innnovative drones and AI drones.</p>
+            </div>
+        </div>
+        <div class="layer-3">
+            <div class="layer3-head">
+                <img src="b1.png" alt="">
+                <h3>Business plan</h3>
+            </div>
+            <div class="layer2-content">
+                <p>Our company is most target to make innnovative drones and AI drones.</p>
+            </div>
+        </div>
+        <div class="layer-4">
+            <div class="layer4-head">
+                <img src="b1.png" alt="">
+                <h3>Business plan</h3>
+            </div>
+            <div class="layer2-content">
+                <p>Our company is most target to make innnovative drones and AI drones.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="parent-2">
+            <div class="website">
+                <i class="fa-solid fa-globe"></i>
+                <p>www.droneworld.com</p>
+            </div>
+            <div class="facebook">
+                <i class="fa-brands fa-facebook"></i>
+                <p>droneworld_professions</p>
+            </div>
+            <div class="linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+                <p>Droneworld@professions</p>
+            </div>
+            <div class="image">
+                <img src="drone1.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('show');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

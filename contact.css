@@ -1,0 +1,1499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: #222;
+
+}
+
+.navbar h1 {
+    color: grey;
+    font-size: 40px;
+}
+
+/* Menu links */
+.nav-links ul {
+    display: flex;
+    gap: 30px;
+    transition: 0.3s ease-in;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: grey;
+}
+
+/* Hamburger menu button */
+.menu {
+    display: none;
+}
+
+.menu button {
+    font-size: 30px;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* navbar responsive */
+@media(max-width:1000px) {
+    .navbar {
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+
+    .menu {
+        display: block;
+        float: right;
+        position: relative;
+        left: 840px;
+
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .navbar h1,
+    .menu {
+        position: absolute;
+        top: 10px;
+    }
+
+    .show {
+        display: none;
+        position: relative;
+    }
+
+    .nav-links {
+        background-color: grey;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .nav-links ul {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        height: 40%;
+    }
+
+    .nav-links ul li {
+        padding: 30px;
+    }
+
+    .nav-links ul li a.active {
+        color: black;
+    }
+
+    .nav-links ul li a:hover {
+        color: white;
+    }
+}
+
+@media(max-width:870px) {
+    .navbar {
+        overflow: hidden;
+        margin-bottom: 50px;
+        padding: 0 30px;
+    }
+
+    .menu {
+        display: block;
+        float: right;
+        position: relative;
+        left: 780px;
+
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .navbar h1,
+    .menu {
+        position: absolute;
+        top: 10px;
+    }
+
+    .show {
+        display: none;
+    }
+
+    .nav-links {
+        background-color: grey;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .nav-links ul {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        height: 40%;
+    }
+
+    .nav-links ul li {
+        padding: 30px;
+    }
+
+    .nav-links ul li a.active {
+        color: black;
+    }
+
+    .nav-links ul li a:hover {
+        color: white;
+    }
+}
+
+@media(max-width:810px) {
+    .navbar {
+        overflow: hidden;
+        margin-bottom: 50px;
+        padding: 0 30px;
+    }
+
+    .menu {
+        display: block;
+        float: right;
+        position: relative;
+        left: 750px;
+
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .navbar h1,
+    .menu {
+        position: absolute;
+        top: 10px;
+    }
+
+    .show {
+        display: none;
+    }
+
+    .nav-links {
+        background-color: grey;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .nav-links ul {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        height: 40%;
+    }
+
+    .nav-links ul li {
+        padding: 30px;
+    }
+
+    .nav-links ul li a.active {
+        color: black;
+    }
+
+    .nav-links ul li a:hover {
+        color: white;
+    }
+}
+
+@media(max-width:800px) {
+    .navbar {
+        overflow: hidden;
+        margin-bottom: 50px;
+        padding: 0 30px;
+    }
+
+    .menu {
+        display: block;
+        float: right;
+        position: relative;
+        left: 720px;
+
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .navbar h1,
+    .menu {
+        position: absolute;
+        top: 10px;
+    }
+
+    .show {
+        display: none;
+    }
+
+    .nav-links {
+        background-color: grey;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .nav-links ul {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        height: 40%;
+    }
+
+    .nav-links ul li {
+        padding: 30px;
+    }
+
+    .nav-links ul li a.active {
+        color: black;
+    }
+
+    .nav-links ul li a:hover {
+        color: white;
+    }
+}
+
+@media(max-width:750px) {
+    .navbar {
+        overflow: hidden;
+        margin-bottom: 50px;
+        padding: 0 30px;
+    }
+
+    .menu {
+        display: block;
+        float: right;
+        position: relative;
+        left: 690px;
+
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .navbar h1,
+    .menu {
+        position: absolute;
+        top: 10px;
+    }
+
+    .show {
+        display: none;
+
+        position: relative;
+    }
+
+    .nav-links {
+        background-color: grey;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .nav-links ul {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        height: 40%;
+    }
+
+    .nav-links ul li {
+        padding: 30px;
+    }
+
+    .nav-links ul li a.active {
+        color: black;
+    }
+
+    .nav-links ul li a:hover {
+        color: white;
+    }
+}
+
+@media(max-width:700px) {
+    .navbar {
+        overflow: hidden;
+        margin-bottom: 50px;
+        padding: 0 30px;
+    }
+
+    .menu {
+        display: block;
+        float: right;
+        position: relative;
+        left: 620px;
+
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .navbar h1,
+    .menu {
+        position: absolute;
+        top: 10px;
+    }
+
+    .show {
+        display: none;
+
+        position: relative;
+    }
+
+    .nav-links {
+        background-color: grey;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .nav-links ul {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        height: 40%;
+    }
+
+    .nav-links ul li {
+        padding: 30px;
+    }
+
+    .nav-links ul li a.active {
+        color: black;
+    }
+
+    .nav-links ul li a:hover {
+        color: white;
+    }
+}
+
+@media(max-width:650px) {
+    .navbar {
+        overflow: hidden;
+        margin-bottom: 50px;
+        padding: 0 30px;
+    }
+
+    .menu {
+        display: block;
+        float: right;
+        position: relative;
+        left: 550px;
+
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .navbar h1,
+    .menu {
+        position: absolute;
+        top: 10px;
+    }
+
+    .show {
+        display: none;
+
+        position: relative;
+    }
+
+    .nav-links {
+        background-color: grey;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .nav-links ul {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        height: 40%;
+    }
+
+    .nav-links ul li {
+        padding: 30px;
+    }
+
+    .nav-links ul li a.active {
+        color: black;
+    }
+
+    .nav-links ul li a:hover {
+        color: white;
+    }
+}
+
+@media(max-width:600px) {
+    .navbar {
+        overflow: hidden;
+        margin-bottom: 50px;
+        padding: 0 30px;
+    }
+
+    .menu {
+        display: block;
+        float: right;
+        position: relative;
+        left: 530px;
+
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .navbar h1,
+    .menu {
+        position: absolute;
+        top: 10px;
+    }
+
+    .show {
+        display: none;
+
+        position: relative;
+    }
+
+    .nav-links {
+        background-color: grey;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .nav-links ul {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        height: 40%;
+    }
+
+    .nav-links ul li {
+        padding: 30px;
+    }
+
+    .nav-links ul li a.active {
+        color: black;
+    }
+
+    .nav-links ul li a:hover {
+        color: white;
+    }
+}
+
+@media(max-width:550px) {
+    .navbar {
+        overflow: hidden;
+        margin-bottom: 50px;
+        padding: 0 30px;
+    }
+
+    .menu {
+        display: block;
+        float: right;
+        position: relative;
+        left: 480px;
+
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .navbar h1,
+    .menu {
+        position: absolute;
+        top: 10px;
+    }
+
+    .show {
+        display: none;
+
+        position: relative;
+    }
+
+    .nav-links {
+        background-color: grey;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .nav-links ul {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        height: 40%;
+    }
+
+    .nav-links ul li {
+        padding: 30px;
+    }
+
+    .nav-links ul li a.active {
+        color: black;
+    }
+
+    .nav-links ul li a:hover {
+        color: white;
+    }
+}
+
+@media(max-width:500px) {
+    .navbar {
+        overflow: hidden;
+        margin-bottom: 50px;
+        padding: 0 30px;
+    }
+
+    .menu {
+        display: block;
+        float: right;
+        position: relative;
+        left: 440px;
+
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .navbar h1,
+    .menu {
+        position: absolute;
+        top: 10px;
+    }
+
+    .show {
+        display: none;
+
+        position: relative;
+    }
+
+    .nav-links {
+        background-color: grey;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .nav-links ul {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        height: 40%;
+    }
+
+    .nav-links ul li {
+        padding: 30px;
+    }
+
+    .nav-links ul li a.active {
+        color: black;
+    }
+
+    .nav-links ul li a:hover {
+        color: white;
+    }
+}
+
+@media(max-width:450px) {
+    .navbar {
+        overflow: hidden;
+        margin-bottom: 50px;
+        padding: 0 30px;
+    }
+
+    .menu {
+        display: block;
+        float: right;
+        position: relative;
+        left: 390px;
+
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .navbar h1,
+    .menu {
+        position: absolute;
+        top: 10px;
+    }
+
+    .show {
+        display: none;
+
+        position: relative;
+    }
+
+    .nav-links {
+        background-color: grey;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .nav-links ul {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        height: 40%;
+    }
+
+    .nav-links ul li {
+        padding: 30px;
+    }
+
+    .nav-links ul li a.active {
+        color: black;
+    }
+
+    .nav-links ul li a:hover {
+        color: white;
+    }
+}
+
+@media(max-width:410px) {
+    .navbar {
+        overflow: hidden;
+        margin-bottom: 50px;
+        padding: 0 30px;
+    }
+
+    .menu {
+        display: block;
+        float: right;
+        position: relative;
+        left: 320px;
+
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .navbar h1,
+    .menu {
+        position: absolute;
+        top: 10px;
+    }
+
+    .show {
+        display: none;
+
+        position: relative;
+    }
+
+    .nav-links {
+        background-color: grey;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .nav-links ul {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        height: 40%;
+    }
+
+    .nav-links ul li {
+        padding: 30px;
+    }
+
+    .nav-links ul li a.active {
+        color: black;
+    }
+
+    .nav-links ul li a:hover {
+        color: white;
+    }
+}
+
+@media(max-width:450px) {
+    .menu {
+        display: block;
+        left: 340px;
+    }
+
+    .navbar h1 {
+        font-size: 30px;
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .show {
+        display: none;
+
+        position: relative;
+    }
+}
+
+@media(max-width:350px) {
+    .menu {
+        display: block;
+        left: 280px;
+    }
+
+    .navbar h1 {
+        font-size: 25px;
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .show {
+        display: none;
+    }
+}
+
+@media(max-width:320px) {
+    .menu {
+        display: block;
+        left: 270px;
+    }
+
+    .navbar h1 {
+        font-size: 25px;
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .show {
+        display: none;
+    }
+}
+
+@media(max-width:300px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: block;
+        left: 220px;
+    }
+
+    .navbar h1 {
+        font-size: 15px;
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .show {
+        display: none;
+    }
+}
+
+/* layer-1 */
+
+.layer1-content {
+    color: #fff;
+    border: solid;
+    padding: 30px;
+    text-align: center;
+}
+
+
+/* map */
+.map {
+    width: 100%;
+    border: solid;
+    align-items: center;
+    padding: 30px;
+    border: solid white;
+}
+
+@media(max-width:1000px) {
+    .map {
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .form {
+        text-align: center;
+    }
+
+
+}
+
+@media(max-width:900px) {
+    .map {
+        flex-direction: column;
+        padding: 0;
+    }
+
+}
+
+@media(max-width:700px) {
+    .map {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .map-content {
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media(max-width:650px) {
+    .map {
+        flex-direction: column;
+        padding: 0;
+        left: 0;
+    }
+
+    .map-content {
+        width: 100%;
+        padding: 0;
+        object-fit: fill;
+    }
+}
+
+@media(max-width:500px) {
+    .map {
+        flex-direction: column;
+        padding: 0;
+        left: 0;
+    }
+
+    .map-content {
+        width: 100%;
+        padding: 0;
+        object-fit: fill;
+    }
+
+    form div input {
+        width: 200%;
+    }
+}
+
+/* form design */
+form {
+    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form div {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form div input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+form div button {
+    background-color: green;
+    padding: 20px 50px;
+    margin-top: 30px;
+    color: white;
+    border-radius: 30px;
+}
+
+@media(max-width:900px) {
+    form {
+        flex-direction: column;
+    }
+
+    form div input {
+        padding: 0;
+        margin-top: 30px;
+    }
+}
+
+/* footer design */
+footer {
+    background-color: #222;
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.parent-2 {
+    display: flex;
+    text-align: center;
+}
+
+.website {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    gap: 30px;
+    align-items: center;
+}
+
+.website i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.website p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.facebook {
+    width: 100%;
+    padding: 10px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.facebook i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.facebook p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.linkedin {
+    width: 100%;
+    padding: 10px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.linkedin i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.linkedin p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.image {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media(max-width:1200px) {
+    .image img {
+        width: 240px;
+        height: 220px;
+    }
+}
+
+@media(max-width:1100px) {
+    .image img {
+        width: 200px;
+        height: 180px;
+    }
+}
+
+@media(max-width:1050px) {
+    .image img {
+        width: 180px;
+        height: 130px;
+    }
+}
+
+@media(max-width:1000px) {
+    .parent-2 {
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width:900px) {
+
+    footer {
+        place-items: center;
+
+    }
+
+    .website {
+        width: 100%;
+    }
+
+    .facebook {
+        width: 100%;
+    }
+
+    .linkedin {
+        width: 100%;
+    }
+
+    .website i {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .website p {
+        color: #fff;
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:700px) {
+
+    footer {
+        place-items: center;
+
+    }
+
+    .website {
+        width: 100%;
+    }
+
+    .facebook {
+        width: 100%;
+    }
+
+    .linkedin {
+        width: 100%;
+    }
+
+    .website i {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .website p {
+        color: #fff;
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:450px) {
+    footer {
+        flex-direction: column;
+        place-items: center;
+
+    }
+
+    .parent-2 {
+        width: 100%;
+    }
+
+    .website {
+        width: 100%;
+    }
+
+    .facebook {
+        width: 100%;
+    }
+
+    .linkedin {
+        width: 100%;
+    }
+
+    .website i {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .website p {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .facebook i {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .facebook p {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .linkedin i {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .linkedin p {
+        color: #fff;
+        font-size: 18px;
+    }
+
+}
+
+@media(max-width:400px) {
+    footer {
+        flex-direction: column;
+        place-items: center;
+        width: 100%;
+        padding: 30px;
+
+    }
+
+    .website i {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .website p {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .facebook i {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .facebook p {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .linkedin i {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .linkedin p {
+        color: #fff;
+        font-size: 18px;
+    }
+
+}
+
+@media(max-width:350px) {
+    footer {
+        flex-direction: column;
+        place-items: center;
+        width: 100%;
+
+    }
+
+    .parent-2 {
+        width: 100%;
+    }
+
+    .website {
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    .facebook {
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    .linkedin {
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    .website i {
+        color: #fff;
+        font-size: 10px;
+    }
+
+    .website p {
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .facebook i {
+        color: #fff;
+        font-size: 10px;
+    }
+
+    .facebook p {
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .linkedin i {
+        color: #fff;
+        font-size: 10px;
+    }
+
+    .linkedin p {
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .image img {
+        width: 240px;
+        height: 240px;
+    }
+
+}
+
+@media(max-width:370px) {
+    footer {
+        flex-direction: column;
+        place-items: center;
+        width: 100%;
+
+    }
+
+    .parent-2 {
+        width: 110%;
+    }
+
+    .website {
+        width: 100%;
+    }
+
+    .facebook {
+        width: 100%;
+    }
+
+    .linkedin {
+        width: 100%;
+    }
+
+    .website i {
+        color: #fff;
+        font-size: 10px;
+    }
+
+    .website p {
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .facebook i {
+        color: #fff;
+        font-size: 10px;
+    }
+
+    .facebook p {
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .linkedin i {
+        color: #fff;
+        font-size: 10px;
+    }
+
+    .linkedin p {
+        color: #fff;
+        font-size: 13px;
+    }
+
+}
+
+@media(max-width:320px) {
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .parent-2 {
+        padding: 0;
+        width: 130%;
+    }
+
+    .website {
+        width: 100%;
+    }
+
+    .facebook {
+        width: 100%;
+    }
+
+    .linkedin {
+        width: 100%;
+    }
+
+    .website i {
+        color: #fff;
+        font-size: 10px;
+    }
+
+    .website p {
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .facebook i {
+        color: #fff;
+        font-size: 10px;
+    }
+
+    .facebook p {
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .linkedin i {
+        color: #fff;
+        font-size: 10px;
+    }
+
+    .linkedin p {
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .image img {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+@media(max-width:300px) {
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .parent-2 {
+        padding: 0;
+        width: 130%;
+    }
+
+    .website {
+        width: 100%;
+    }
+
+    .facebook {
+        width: 100%;
+    }
+
+    .linkedin {
+        width: 100%;
+    }
+
+    .website i {
+        color: #fff;
+        font-size: 10px;
+    }
+
+    .website p {
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .facebook i {
+        color: #fff;
+        font-size: 10px;
+    }
+
+    .facebook p {
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .linkedin i {
+        color: #fff;
+        font-size: 10px;
+    }
+
+    .linkedin p {
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .image img {
+        width: 270px;
+        height: 240px;
+    }
+
+}
